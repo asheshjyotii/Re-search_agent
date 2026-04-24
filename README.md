@@ -1,3 +1,4 @@
 - [x] Setup
 - [x] Tools build
-- [ ] Agent
+- [x] Agent
+- [ ] Pipeline

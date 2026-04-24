@@ -44,4 +44,3 @@ def page_fetch(url: str) -> str:
     except Exception as err:
         return f"Could not fetch the url err : {err}"
 
-print(page_fetch.invoke('https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts'))
