@@ -12,7 +12,7 @@
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM%20API-A855F7?style=for-the-badge)](https://openrouter.ai/)
 [![Tavily](https://img.shields.io/badge/Tavily-search%20API-0EA5E9?style=for-the-badge)](https://tavily.com/)
 
-[![Follow on X / Twitter](https://img.shields.io/badge/Follow-%40asheshjyotii-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/intent/follow?screen_name=asheshjyotii)
+[![Follow @asheshjyotii on Twitter](https://img.shields.io/badge/Follow-%40asheshjyotii-1DA1F2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMy45NTMgNC41N2ExMCAxMCAwIDAxLTIuODI1Ljc3NSA0Ljk1OCA0Ljk1OCAwIDAwMi4xNjMtMi43MjNjLS45NTEuNTU1LTIuMDA1Ljk1OS0zLjEyNyAxLjE4NGE0LjkyIDQuOTIgMCAwMC04LjM4NCA0LjQ4MkM3LjY5IDguMDk1IDQuMDY3IDYuMTMgMS42NCAzLjE2MmE0LjgyMiA0LjgyMiAwIDAwLS42NjYgMi40NzVjMCAxLjcxLjg3IDMuMjEzIDIuMTg4IDQuMDk2YTQuOTA0IDQuOTA0IDAgMDEtMi4yMjgtLjYxNnYuMDZhNC45MjMgNC45MjMgMCAwMDMuOTQ2IDQuODI3IDQuOTk2IDQuOTk2IDAgMDEtMi4yMTIuMDg1IDQuOTM2IDQuOTM2IDAgMDA0LjYwNCAzLjQxNyA5Ljg2NyA5Ljg2NyAwIDAxLTYuMTAyIDIuMTA1Yy0uMzkgMC0uNzc5LS4wMjMtMS4xNy0uMDY3YTEzLjk5NSAxMy45OTUgMCAwMDcuNTU3IDIuMjA5YzkuMDUzIDAgMTMuOTk4LTcuNDk2IDEzLjk5OC0xMy45ODUgMC0uMjEgMC0uNDItLjAxNS0uNjNBOS45MzUgOS45MzUgMCAwMDI0IDQuNTl6Ii8%2BPC9zdmc%2B&logoColor=white)](https://twitter.com/intent/follow?screen_name=asheshjyotii)
 
 </div>
 
@@ -80,7 +80,7 @@ flowchart LR
 ### 1. Clone and environment
 
 ```bash
-git clone <your-repo-url>
+git clone <repo-url>
 cd Re-search_agent
 python3.11 -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
