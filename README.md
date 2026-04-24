@@ -1,2 +1,3 @@
 - [x] Setup
-- [ ] Tools build
+- [x] Tools build
+- [ ] Agent
