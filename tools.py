@@ -2,7 +2,6 @@ from langchain.tools import tool
 from tavily import TavilyClient
 from dotenv import load_dotenv
 import os
-from rich import print
 import requests
 from bs4 import BeautifulSoup
 
@@ -14,7 +13,7 @@ tavily = TavilyClient(os.getenv("TAVILY_API_KEY"))
 def search_query(query : str) -> str:
     """Search the web for a given query, takes str as input and ouputs str as result"""
 
-    results = tavily.search(query=query, max_results=20)
+    results = tavily.search(query=query, max_results=5)
     
     rs = []
 

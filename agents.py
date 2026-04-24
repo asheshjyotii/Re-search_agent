@@ -1,35 +1,33 @@
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
-from langchain_core.prompts import ChatPromptTemplates
-from langchain_core.output_parser import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 from tools import page_fetch, search_query
-from rich import print
-
 
 load_dotenv()
 
 model = init_chat_model(
-    model = "google/gemma-3n-e2b-it:free",
+    model = "deepseek/deepseek-v3.2",
     model_provider = "openrouter",
     temperature = 0
 )
 
 
-def search_agent():
+def build_search_agent():
     return create_agent(
         model = model,
         tools = [search_query]
     )
 
-def scrape_agent():
+def build_scrape_agent():
     return create_agent(
         model = model,
         tools = [page_fetch]
     )
 
 
-writer_prompt = ChatPromptTemplates.from_messages([
+writer_prompt = ChatPromptTemplate.from_messages([
     ("system", "You are an expert research writer. Write clear, structured and insightful reports."),
     ("human", """Write a detailed research report on the topic below.
 
@@ -51,7 +49,7 @@ Be detailed, factual and professional."""),
 writer_chain = writer_prompt | model | StrOutputParser()
 
 
-critic_prompt = ChatPromptTemplates.from_messages([
+critic_prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a sharp and constructive research critic. Be honest and specific."),
     ("human", """Review the research report below and evaluate it strictly.
 

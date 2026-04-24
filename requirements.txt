@@ -27,8 +27,8 @@ pandas>=2.0.0
 # Token counting / text utils
 tiktoken>=0.6.0
 
-# Logging / debugging (optional but recommended)
-rich>=13.7.0
+# Web UI
+streamlit>=1.34.0
 
 # Retry + robustness
 tenacity>=8.2.0
